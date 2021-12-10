@@ -48,9 +48,21 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/img-yudit.jpeg" alt="Yuditia" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/img-yudit.jpeg" alt="Yuditia" width="200" class="rounded-circle img-thumbnail photo-profil" />
       <h1 class="display-4">Yuditia</h1>
       <p class="lead"></p>
+      <!-- sosial media -->
+      <section id="sosmed">
+        <div class="row justify-content-center">
+          <div class="col">
+            <a href="https://wa.link/eyrkwu"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="logo whatsapp" width="30" /></a>
+            <a href="https://github.com/yuditia"><img src="https://img.icons8.com/fluency/48/000000/github.png" alt="logo github" width="30" /></a>
+            <a href="https://msng.link/o/?@yuditraditya=tg"><img src="https://img.icons8.com/color/48/000000/telegram-app--v1.png" alt="logo telegram" width="30" /></a>
+            <a href="https://www.instagram.com/yuditraditya/"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="logo instagram" width="30" /></a>
+          </div>
+        </div>
+      </section>
+      <!-- akhir sosial media -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -71,10 +83,10 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas hic pariatur voluptatem. Illo nihil deleniti aperiam iste quidem? Rerum, eum.</p>
+            <p>Hi, perkenalkan nama saya <b>Yuditia</b>, saya lulusan dari Universitas Binaniaga Bogor jurusan <b>Sistem Informasi</b>, saat ini saya berdomisili di Bogor.</p>
           </div>
           <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sed nam dignissimos dicta iure, aliquid id soluta, corrupti, accusamus facere atque! Illo dolorum repellat labore.</p>
+            <p>fokus utama saya saat ini adalah sebagai <b>Data Scientis/Data Analyst</b>. dalam mencapai tujuan tersebut saya sudah mempelajari bahasa R, Phyton, SQL, html, css, bootstrap, java.</p>
           </div>
         </div>
       </div>
@@ -275,7 +287,7 @@
         img.dataset.aosDuration = 1000;
       });
       AOS.init({
-        once: true,
+        once: false,
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
@@ -283,7 +295,7 @@
     <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Data Scientis | Data Analyst' });
-      gsap.from('.jumbotron img', { duration: 1, rotateY: 360, oppacity: 0 });
+      gsap.from('.photo-profil', { duration: 1, rotateY: 360, oppacity: 0 });
       gsap.from('.navbar', { duration: 1.5, oppacity: 0, y: '-100%', ease: 'bounce' });
       gsap.from('.display-4', { duration: 1, oppacity: 0, x: -70, delay: 0.5, ease: 'back' });
     </script>
