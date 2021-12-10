@@ -1,5 +1,5 @@
 .jumbotron {
-  padding-top: 6rem;
+  padding-top: 10rem;
   background-color: #e2edff;
 }
 
@@ -18,5 +18,22 @@ section {
   padding: 0;
 }
 #sosmed {
+  padding-top: 0;
+}
+
+#about {
+  padding-top: 0;
+}
+#projects {
+  padding-top: 0;
+}
+
+.card-img-top {
+  overflow: hidden;
+}
+.card-img-top:hover {
+  transform: scale(1.2);
+}
+#gallery {
   padding-top: 0;
 }
