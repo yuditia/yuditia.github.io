@@ -1,332 +1,1108 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yuditia - Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <!-- bootstrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-    <!-- css animasi -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- akhir css animasi -->
-    <!-- My css -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- akhir my css -->
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-    <title>My Portofolio | Yuditia</title>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body id="home">
-    <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Yuditia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-          </ul>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav
+      class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand ml-lg-3">
+        <h1 class="m-0 display-5">
+          <span class="text-primary">Yudit</span>Portofolio
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <div class="navbar-nav m-auto py-0">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#qualification" class="nav-item nav-link">Quality</a>
+          <a href="#skill" class="nav-item nav-link">Skill</a>
+          <a href="#service" class="nav-item nav-link">Service</a>
+          <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+          <a href="#testimonial" class="nav-item nav-link">Review</a>
+          <a href="#blog" class="nav-item nav-link">Blog</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
+        <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
       </div>
     </nav>
-    <!-- akhir nav bar -->
+    <!-- Navbar End -->
 
-    <!-- jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/img-yudit.jpeg" alt="Yuditia" width="200" class="rounded-circle img-thumbnail photo-profil" />
-      <h1 class="display-4">Yuditia</h1>
-      <p class="lead"></p>
-      <!-- sosial media -->
-      <section id="sosmed">
-        <div class="row justify-content-center">
-          <div class="col">
-            <a href="https://wa.link/eyrkwu"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="logo whatsapp" width="30" /></a>
-            <a href="https://github.com/yuditia"><img src="https://img.icons8.com/fluency/48/000000/github.png" alt="logo github" width="30" /></a>
-            <a href="https://t.me/yuditraditya"><img src="https://img.icons8.com/color/48/000000/telegram-app--v1.png" alt="logo telegram" width="30" /></a>
-            <a href="https://www.instagram.com/yuditraditya/"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="logo instagram" width="30" /></a>
-          </div>
-        </div>
-      </section>
-      <!-- akhir sosial media -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,32L40,53.3C80,75,160,117,240,117.3C320,117,400,75,480,74.7C560,75,640,117,720,133.3C800,149,880,139,960,149.3C1040,160,1120,192,1200,186.7C1280,181,1360,139,1400,117.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir jumbrotron -->
-
-    <!-- About me -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
-            <p>Hi, introduce my name <b>Yuditia</b>, I graduated from Binaniaga University Bogor majoring in <b>Information Systems</b>, currently I live in Bogor.</p>
-          </div>
-          <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
-            <p>My main focus right now is as a <b>Data Scientist/Data Analyst</b>. in achieving this goal I have studied the language R, Python, SQL, html, css, bootstrap, java.</p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,96L40,128C80,160,160,224,240,229.3C320,235,400,181,480,160C560,139,640,149,720,144C800,139,880,117,960,144C1040,171,1120,245,1200,256C1280,267,1360,213,1400,186.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir About me -->
-
-    <!-- Project -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Projects</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" style="width: 18rem">
-              <a href="https://github.com/yuditia/Market-Basket-Analysis"><img src="projects/1.jpg" class="card-img-top" alt="Project1" /></a>
-              <div class="card-body">
-                <p class="card-text text-center">Market Basket Analysis in product retail with Arules package in R</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="150" style="width: 18rem">
-              <img src="projects/2.jpg" class="card-img-top" alt="Project2" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="250" style="width: 18rem">
-              <img src="projects/3.jpg" class="card-img-top" alt="Project3" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="350" style="width: 18rem">
-              <img src="projects/4.jpg" class="card-img-top" alt="Project4" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="450" style="width: 18rem">
-              <img src="projects/5.jpg" class="card-img-top" alt="Project5" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+    <!-- Video Modal Start -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src=""
+                id="video"
+                allowscriptaccess="always"
+                allow="autoplay"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,128L40,133.3C80,139,160,149,240,128C320,107,400,53,480,80C560,107,640,213,720,256C800,299,880,277,960,234.7C1040,192,1120,128,1200,96C1280,64,1360,64,1400,64L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir project -->
-    <!-- gallery -->
-    <section id="gallery">
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- Header Start -->
+    <div
+      class="container-fluid bg-primary d-flex align-items-center mb-5 py-5"
+      id="home"
+      style="min-height: 100vh"
+    >
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Gallery</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+            <img
+              class="img-fluid w-100 rounded-circle shadow-sm"
+              src="img/foto.jpg"
+              alt=""
+            />
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/1.jpg" alt="gambar1" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/2.jpg" alt="gambar2" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/3.jpg" alt="gambar3" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/4.jpg" alt="gambar4" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/5.jpg" alt="gambar5" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/6.jpg" alt="gambar6" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/7.jpg" alt="gambar7" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/8.jpg" alt="gambar8" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/9.jpg" alt="gambar9" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/10.jpg" alt="gambar10" class="img-fluid gallery-img" />
-            </a>
+          <div class="col-lg-7 text-center text-lg-left">
+            <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+            <h1
+              class="display-3 text-uppercase text-primary mb-2"
+              style="-webkit-text-stroke: 2px #ffffff"
+            >
+              Yuditia
+            </h1>
+            <h1
+              class="typed-text-output d-inline font-weight-lighter text-white"
+            ></h1>
+            <div class="typed-text d-none">
+              Web Developer, Front End Developer, Back end Developer, Full Stack
+              Developer
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
+            >
+              <a
+                href="https://doc-0g-8c-docs.googleusercontent.com/docs/securesc/fpnncp6pj21dmqh6r4pt4lg1t7pu2j7k/fji191j2ur251pbrk5vtvn3ak64op98r/1654220025000/12076859996035846927/12076859996035846927/1a6FTWtmP24s4hZR_JKH62-wM2F3GX4ia?e=download&ax=ACxEAsYokJHGi3uBUPmCESVmOhGDc-Qx3WbLaaFEYxEVstT9KTBt6ueVUZY1w4qmqJcnuW3zz-qp-7Yr8GKkLrWczwN0ctg8mJrglCaaq_g6i5C0AduLnhpO7KHWb31ZRPiMyzGE23l3LjZslBsGFlyAXvwEQhjvKJKBfiLOoRlYQt4gYNWVii8K5wRu2IgVpsIKVoGrzeNzHGJxd-wSIiNh52rNU8mhfo5Cg9FCEplREdA0fxgfCLZsh6PnKnL_3MmedlnccImFnBfoyw4562MHTbSvL6bzopVWceIOu8ZXw0K9UL9bpCnrySQNUy5F3d_ExCiYAmDKUGE_305svWA22na18TeboqYs_Yt4hJpIAOpZb-b6smU9BV6vHh9fRPUI2tUfoLHSd5Ta_UVzdh8uy5jc7liWeyEc8cqR4PbPo1gcBhff3aw08Tf-FDDLtiR_GaeoUm7ZGHP_howJZ2eO2bolBo3leDEolYcZ9L6gkptp0PnAt-H9qkVhVH0dmu87ezLXOOa7P01MJFUuASMo4AnC8wQCDZB6K0L7vQWSTJwaSKn2rAsx4zjHqUbMSZNC-VwWkKhL7Wc-logIXfsb6OLuPrUzgsSqP0wXLKdKCfsImQYaEiQH8Ge5yWa46EVl2q8_glAfXmw9yp0Yv7QV9zXB1KAXbNG4lQIZOtrVTn9joRsh4MPRpPidKQgA6BrsWVV_eetutuXx8w&authuser=0&nonce=5mfokgvsm8v00&user=12076859996035846927&hash=v896li9qds4p1loarmfslbvh300nq9vm"
+                class="btn btn-outline-light mr-5"
+                >Download CV</a
+              >
+              <!-- <button
+                type="button"
+                class="btn-play"
+                data-toggle="modal"
+                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                data-target="#videoModal"
+              >
+                <span></span>
+              </button> -->
+
+              <!-- <a
+                href="https://github.com/yuditia"
+                class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block"
+              >
+                <img
+                  src="https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png"
+                  alt="github"
+                  height="30"
+              /></a> -->
+              <!-- <h5
+                class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block"
+              >
+                My Github
+              </h5> -->
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- akhir gallery -->
-    <!-- Contact Me -->
-    <section id="contact">
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            About
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            About Me
+          </h1>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 pb-4 pb-lg-0">
+            <img class="img-fluid rounded w-100" src="img/foto2.jpg" alt="" />
+          </div>
+          <div class="col-lg-7">
+            <h3 class="mb-4">Fullstack Web Developer</h3>
+            <p>
+              Junior Web Developer with 2 Years of experience able to build Web
+              from the ground up - information gathering, planning, design,
+              development, testing, delivery and maintenance. Extremly
+              passionate towards software architecture and design combined with
+              sensitivity to serve the needs of the business balanced with the
+              delivery of high quality solution.
+            </p>
+            <div class="row mb-3">
+              <div class="col-sm-6 py-2">
+                <h6>Name: <span class="text-secondary">Yuditia</span></h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6>
+                  Birthday: <span class="text-secondary">12 June 1992</span>
+                </h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6>
+                  Degree: <span class="text-secondary">Bachelor's Degree</span>
+                </h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6>Experience: <span class="text-secondary">2 Years</span></h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6>
+                  Phone: <span class="text-secondary">+62 878 7470 3492</span>
+                </h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6>
+                  Email:
+                  <span class="text-secondary">bunggukechi@gmail.com</span>
+                </h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6>
+                  Address:
+                  <span class="text-secondary">Bogor Utara, Jawa Barat</span>
+                </h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6>
+                  Freelance: <span class="text-secondary">Available</span>
+                </h6>
+              </div>
+            </div>
+            <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
+            <a href="" class="btn btn-outline-primary">Learn More</a>
           </div>
         </div>
-        <div class="row justify-content-center">
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            Quality
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            Education & Expericence
+          </h1>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h3 class="mb-4">My Education</h3>
+            <div class="border-left border-primary pt-2 pl-4 ml-2">
+              <div class="position-relative mb-4">
+                <i
+                  class="far fa-dot-circle text-primary position-absolute"
+                  style="top: 2px; left: -32px"
+                ></i>
+                <h5 class="font-weight-bold mb-1">
+                  Bachelor's Degree In Information System
+                </h5>
+                <p class="mb-2">
+                  <strong>Universitas Binaniaga Indonesia</strong> |
+                  <small>2016 - 2021</small>
+                </p>
+                <p>
+                  a combination of information technology and the activities of
+                  people who use that technology to support operations and
+                  management. In a very broad sense, the term information system
+                  that is often used refers to the interaction between people,
+                  algorithmic processes, data, and technology.
+                </p>
+              </div>
+              <div class="position-relative mb-4">
+                <i
+                  class="far fa-dot-circle text-primary position-absolute"
+                  style="top: 2px; left: -32px"
+                ></i>
+                <h5 class="font-weight-bold mb-1">
+                  Diploma Degree in Adm Business
+                </h5>
+                <p class="mb-2">
+                  <strong>BogorEducare</strong> |
+                  <small>2010 - 2012</small>
+                </p>
+                <p>
+                  learn how to communicate with foreigners in English, learn
+                  cash flow, learn how to type with 10 fingers, learn how to
+                  design products, learn to speak infront of people such us
+                  presentation, or public speaking.
+                </p>
+              </div>
+              <div class="position-relative mb-4">
+                <i
+                  class="far fa-dot-circle text-primary position-absolute"
+                  style="top: 2px; left: -32px"
+                ></i>
+                <h5 class="font-weight-bold mb-1">Vocational High School</h5>
+                <p class="mb-2">
+                  <strong>SMK Binawarga 1</strong> |
+                  <small>2007 - 2010</small>
+                </p>
+                <p>
+                  learn how to organize, how to interact with older ones in the
+                  organization, participate in social activities and
+                  extracurricular activities, such as karate, football. in smk
+                  also learned how to draw an electrical circuit, make an
+                  electrical circuit with mcb
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="mb-4">My Expericence</h3>
+            <div class="border-left border-primary pt-2 pl-4 ml-2">
+              <div class="position-relative mb-4">
+                <i
+                  class="far fa-dot-circle text-primary position-absolute"
+                  style="top: 2px; left: -32px"
+                ></i>
+                <h5 class="font-weight-bold mb-1">Full Stack Developer</h5>
+                <p class="mb-2">
+                  <strong>PT CBN</strong> |
+                  <small>march,2022 - june,2022</small>
+                </p>
+                <p>
+                  creating models within an MVC application thats implements the
+                  business logic necessary to statisfy bussiness requirement,
+                  implementing advance search, paging, export data to xlsx using
+                  php spreadsheet, upload data from xlsx to database using box
+                  spout php, using datatable packages to display data, using
+                  jquery ajax for the dynamic user interface, retrieval, and
+                  posting of data.
+                </p>
+              </div>
+              <div class="position-relative mb-4">
+                <i
+                  class="far fa-dot-circle text-primary position-absolute"
+                  style="top: 2px; left: -32px"
+                ></i>
+                <h5 class="font-weight-bold mb-1">Develop E-learning Apps</h5>
+                <p class="mb-2">
+                  <strong>Freelance</strong> |
+                  <small>december,2021 - feb, 2022</small>
+                </p>
+                <p>
+                  Researching, designing and implementing the database to be
+                  created, develop project concept and maintaining optimal
+                  workflow, work with senior developer to manage large, complex
+                  design project for corporate client, complete detailed
+                  programming and development tasks for serve side apps, carry
+                  out quality test to discover errors and optimize usability
+                </p>
+              </div>
+              <div class="position-relative mb-4">
+                <i
+                  class="far fa-dot-circle text-primary position-absolute"
+                  style="top: 2px; left: -32px"
+                ></i>
+                <h5 class="font-weight-bold mb-1">
+                  Develop Restful API Cashier
+                </h5>
+                <p class="mb-2">
+                  <strong>Freelance</strong> |
+                  <small>june, 2021 - dec,2021</small>
+                </p>
+                <p>
+                  Develop restful API using laravel and postman, using jwt auth
+                  for secure
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Qualification End -->
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            Skills
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            My Skills
+          </h1>
+        </div>
+        <div class="row align-items-center">
           <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Terimakasih</strong> Pesan anda sudah diterima.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">HTML</h6>
+                <h6 class="font-weight-bold">95%</h6>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-            <form name="submit-to-google-sheet">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">CSS</h6>
+                <h6 class="font-weight-bold">85%</h6>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
               </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+            </div>
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">PHP</h6>
+                <h6 class="font-weight-bold">90%</h6>
               </div>
-
-              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
-
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </form>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Javascript</h6>
+                <h6 class="font-weight-bold">90%</h6>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Jquery</h6>
+                <h6 class="font-weight-bold">95%</h6>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Laravel</h6>
+                <h6 class="font-weight-bold">85%</h6>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="1"
-          d="M0,288L40,282.7C80,277,160,267,240,266.7C320,267,400,277,480,256C560,235,640,181,720,160C800,139,880,149,960,181.3C1040,213,1120,267,1200,288C1280,309,1360,299,1400,293.3L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Contact Me -->
+    </div>
+    <!-- Skill End -->
 
-    <!-- footer -->
-    <footer class="bg-primary text-light text-center pb-5">
-      <p>created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/yuditraditya/" class="text-white fw-bold">Yuditia</a></p>
-    </footer>
-    <!-- akhir footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            Service
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            My Services
+          </h1>
+        </div>
+        <div class="row pb-3">
+          <div class="col-lg-4 col-md-6 text-center mb-5">
+            <div class="d-flex align-items-center justify-content-center mb-4">
+              <i
+                class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"
+              ></i>
+              <h4 class="font-weight-bold m-0">Web Design</h4>
+            </div>
+            <p>
+                Researching, designing and implementing the database to be
+                created, develop project concept and maintaining optimal
+                workflow
+            </p>
+            <a class="border-bottom border-primary text-decoration-none" href="https://github.com/yuditia"
+              >Read More</a
+            >
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-5">
+            <div class="d-flex align-items-center justify-content-center mb-4">
+              <i
+                class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"
+              ></i>
+              <h4 class="font-weight-bold m-0">Web Development</h4>
+            </div>
+            <p>
+                implementing advance search, paging, export data to xlsx using
+                php spreadsheet, upload data from xlsx to database using box
+                spout php, using datatable packages to display data
+            </p>
+            <a class="border-bottom border-primary text-decoration-none" href="https://github.com/yuditia"
+              >Read More</a
+            >
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-5">
+            <div class="d-flex align-items-center justify-content-center mb-4">
+              <i
+                class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"
+              ></i>
+              <h4 class="font-weight-bold m-0">Apps Design</h4>
+            </div>
+            <p>
+                complete detailed programming and development tasks for serve side apps, carry
+                out quality test to discover errors and optimize usability
+            </p>
+            <a class="border-bottom border-primary text-decoration-none" href="https://github.com/yuditia"
+              >Read More</a
+            >
+          <!-- </div>
+          <div class="col-lg-4 col-md-6 text-center mb-5">
+            <div class="d-flex align-items-center justify-content-center mb-4">
+              <i
+                class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"
+              ></i>
+              <h4 class="font-weight-bold m-0">Apps Development</h4>
+            </div>
+            <p>
+              Justo sit justo eos amet tempor amet clita amet ipsum eos elitr.
+              Amet lorem lorem lorem est amet labore eirmod erat clita
+            </p>
+            <a class="border-bottom border-primary text-decoration-none" href=""
+              >Read More</a
+            >
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-5">
+            <div class="d-flex align-items-center justify-content-center mb-4">
+              <i
+                class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"
+              ></i>
+              <h4 class="font-weight-bold m-0">SEO</h4>
+            </div>
+            <p>
+              Justo sit justo eos amet tempor amet clita amet ipsum eos elitr.
+              Amet lorem lorem lorem est amet labore eirmod erat clita
+            </p>
+            <a class="border-bottom border-primary text-decoration-none" href=""
+              >Read More</a
+            >
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-5">
+            <div class="d-flex align-items-center justify-content-center mb-4">
+              <i
+                class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"
+              ></i>
+              <h4 class="font-weight-bold m-0">Content Creating</h4>
+            </div>
+            <p>
+              Justo sit justo eos amet tempor amet clita amet ipsum eos elitr.
+              Amet lorem lorem lorem est amet labore eirmod erat clita
+            </p>
+            <a class="border-bottom border-primary text-decoration-none" href=""
+              >Read More</a
+            >
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            Gallery
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            My Portfolio
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center mb-2">
+            <ul class="list-inline mb-4" id="portfolio-flters">
+              <li
+                class="btn btn-sm btn-outline-primary m-1 active"
+                data-filter="*"
+              >
+                All
+              </li>
+              <li
+                class="btn btn-sm btn-outline-primary m-1"
+                data-filter=".first"
+              >
+                Laravel
+              </li>
+              <li
+                class="btn btn-sm btn-outline-primary m-1"
+                data-filter=".second"
+              >
+                Yii2
+              </li>
+              <li
+                class="btn btn-sm btn-outline-primary m-1"
+                data-filter=".third"
+              >
+                Rest API
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+            <div class="position-relative overflow-hidden mb-2">
+              <a href="https://github.com/yuditia/sistemperpus"><img
+                class="img-fluid rounded w-100"
+                src="img/portfolio-1.jpg"
+                alt=""
+              />
+            </a>
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/portfolio-2.jpg"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/portfolio-3.jpg"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/portfolio-4.jpg"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/portfolio-5.jpg"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/portfolio-6.jpg"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5" id="testimonial">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            Review
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            Clients Say
+          </h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="text-center">
+                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                <h4 class="font-weight-light mb-4">
+                    “Positively contributes to the overall performance of the company through consistent and high-quality work”
+                </h4>
+                <img
+                  class="img-fluid rounded-circle mx-auto mb-3"
+                  src="img/testimonial-1.jpg"
+                  style="width: 80px; height: 80px"
+                />
+                <h5 class="font-weight-bold m-0">Fauzi</h5>
+                <span>Users</span>
+              </div>
+              <div class="text-center">
+                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                <h4 class="font-weight-light mb-4">
+                    “Shows strong time-management and organizational skills”
+                </h4>
+                <img
+                  class="img-fluid rounded-circle mx-auto mb-3"
+                  src="img/testimonial-2.jpg"
+                  style="width: 80px; height: 80px"
+                />
+                <h5 class="font-weight-bold m-0">Jaka</h5>
+                <span>Users</span>
+              </div>
+              <div class="text-center">
+                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                <h4 class="font-weight-light mb-4">
+                    “Works effectively within a team environment to achieve specific tasks or projects”
+                </h4>
+                <img
+                  class="img-fluid rounded-circle mx-auto mb-3"
+                  src="img/testimonial-3.jpg"
+                  style="width: 80px; height: 80px"
+                />
+                <h5 class="font-weight-bold m-0">Rudi</h5>
+                <span>Users</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5" id="blog">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            Blog
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            Latest Blog
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-5">
+            <div class="position-relative mb-4">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/blog-1.jpg"
+                alt=""
+              />
+              <div class="blog-date">
+                <h4 class="font-weight-bold mb-n1">01</h4>
+                <small class="text-white text-uppercase">June</small>
+              </div>
+            </div>
+            <h5 class="font-weight-medium mb-4">
+              How to learn Vue.Js
+            </h5>
+            <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="position-relative mb-4">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/blog-2.jpg"
+                alt=""
+              />
+              <div class="blog-date">
+                <h4 class="font-weight-bold mb-n1">01</h4>
+                <small class="text-white text-uppercase">May</small>
+              </div>
+            </div>
+            <h5 class="font-weight-medium mb-4">
+              How to make laravel powerfull
+            </h5>
+            <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="position-relative mb-4">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/blog-3.jpg"
+                alt=""
+              />
+              <div class="blog-date">
+                <h4 class="font-weight-bold mb-n1">12</h4>
+                <small class="text-white text-uppercase">March</small>
+              </div>
+            </div>
+            <h5 class="font-weight-medium mb-4">
+              How to make Restful API
+            </h5>
+            <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            Contact
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            Contact Me
+          </h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-form text-center">
+              <div id="success"></div>
+              <form id="my-form" action="https://formspree.io/f/mbjwwvqj" method="POST">
+                <div class="form-row">
+                  <!-- <div class="control-group col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control p-4"
+                      id="name"
+                      placeholder="Your Name"
+                      required="required"
+                      data-validation-required-message="Please enter your name"
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div> -->
+                  <div class="control-group col-sm-12">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control p-4"
+                      id="email"
+                      placeholder="Your Email"
+                      required="required"
+                      data-validation-required-message="Please enter your email"
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <!-- <div class="control-group">
+                  <input
+                    type="text"
+                    class="form-control p-4"
+                    id="subject"
+                    placeholder="Subject"
+                    required="required"
+                    data-validation-required-message="Please enter a subject"
+                  />
+                  <p class="help-block text-danger"></p>
+                </div> -->
+                <div class="control-group">
+                  <textarea
+                    class="form-control py-3 px-4"
+                    rows="5"
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    required="required"
+                    data-validation-required-message="Please enter your message"
+                  ></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div>
+                  <button
+                    class="btn btn-outline-primary"
+                    type="submit"
+                    id="my-form-button"
+                  >
+                    Send Message
+                  </button>
+                  <p id="my-form-status"></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5"
+    >
+      <div class="container text-center py-5">
+        <div class="d-flex justify-content-center mb-4">
+          <a class="btn btn-light btn-social mr-2" href="https://twitter.com/Yuditcode?t=TTuRWdOwzHkI_wmhwrKc_Q&s=08"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a class="btn btn-light btn-social mr-2" href="https://web.facebook.com/yuditia"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/yuditia-3633521b3"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a class="btn btn-light btn-social" href="https://www.instagram.com/yuditraditya/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="d-flex justify-content-center mb-3">
+          <a class="text-white" href="#">Privacy</a>
+          <span class="px-3">|</span>
+          <a class="text-white" href="#">Terms</a>
+          <span class="px-3">|</span>
+          <a class="text-white" href="#">FAQs</a>
+          <span class="px-3">|</span>
+          <a class="text-white" href="#">Help</a>
+        </div>
+        <p class="m-0">
+          &copy;
+          <a class="text-white font-weight-bold" href="#">Yudit</a>. All
+          Rights Reserved. Designed by
+          <a class="text-white font-weight-bold" href="https://htmlcodex.com"
+            >HTML Codex</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- swall alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
     <script>
-      const galleryImage = document.querySelectorAll('.gallery-img');
-
-      galleryImage.forEach((img, i) => {
-        img.dataset.aos = 'fade-down';
-        img.dataset.aosDelay = i * 100;
-        img.dataset.aosDuration = 1000;
-      });
-      AOS.init({
-        once: false,
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
-    <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Data Scientis | Data Analyst' });
-      gsap.from('.photo-profil', { duration: 1, rotateY: 360, oppacity: 0 });
-      gsap.from('.navbar', { duration: 1.5, oppacity: 0, y: '-100%', ease: 'bounce' });
-      gsap.from('.display-4', { duration: 1, oppacity: 0, x: -70, delay: 0.5, ease: 'back' });
-    </script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwvfGmd-iTN4oHDcLNNTgYsLSQV0ENjxdWMRXiMnmMhSHyEJjnEZ2WMz83eAqh6c1Jz/exec';
-
-      const form = document.forms['submit-to-google-sheet'];
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        // ketika tombol submit di klik
-        // tampilkan tombol loading dan hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol kirim dan hilangkan tombol loading
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            // tampilkan alert
-            myAlert.classList.toggle('d-none');
-            // reset formnya
-            form.reset();
-            console.log('Success!', response);
-          })
-          .catch((error) => console.error('Error!', error.message));
-      });
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+                swal({
+                    title: "Thanks for contact me!",
+                    text: "your email has been sent!",
+                    icon: "success",
+                    button: "Aww yiss!",
+                    });
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
     </script>
   </body>
 </html>
